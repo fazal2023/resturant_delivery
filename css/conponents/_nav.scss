@@ -55,6 +55,7 @@
   padding: 1rem;
   width: 200px;
   border-radius: 1px solid;
+  z-index: 200;
   -webkit-border-radius: 1px solid;
   -moz-border-radius: 1px solid;
   -ms-border-radius: 1px solid;
@@ -72,11 +73,11 @@
 }
 #input_menu:checked ~ ul {
   top: 5rem;
-  transform: translateX(700px);
-  -webkit-transform: translateX(700px);
-  -moz-transform: translateX(700px);
-  -ms-transform: translateX(700px);
-  -o-transform: translateX(700px);
+  transform: translateX(100px);
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  -o-transform: translateX(100px);
 }
 #input_menu:checked + label svg:first-child {
   display: none;

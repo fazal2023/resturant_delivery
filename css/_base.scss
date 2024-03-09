@@ -6,6 +6,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  @media (max-width: $tablet) {
+    font-size: 62.5%;
+  }
 }
 
 .container_site {
@@ -31,8 +34,20 @@ body {
 @font-face {
   font-family: Poppins;
   font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Poppins-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
   font-weight: 500;
   src: url("../fonts/Poppins-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Poppins-Regular.woff") format("woff");
 }
 @font-face {
   font-family: Poppins;
