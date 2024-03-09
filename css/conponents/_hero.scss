@@ -1,0 +1,13 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  &__left {
+    align-self: center;
+    h1 {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 72px;
+      color: $red;
+    }
+  }
+}

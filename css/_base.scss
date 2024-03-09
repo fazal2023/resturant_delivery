@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container_site {
+  max-width: 1170px;
+  margin: 0 auto;
+  @media (max-width: tablet) {
+    max-width: 1000px;
+  }
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Poppins-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Poppins-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Poppins-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Poppins-Light.woff") format("woff");
+} /*# sourceMappingURL=main.css.map */

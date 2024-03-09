@@ -1,0 +1,108 @@
+.main_header {
+  margin-top: 1rem;
+}
+.navigation {
+  display: grid;
+  grid-template-columns: 58px 635px 187px;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(3, auto);
+    padding: 0 1rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5rem;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $grey-1;
+        font-weight: 500;
+      }
+      a.active {
+        color: $red;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.navigation > ul {
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+.menu_icon {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+#close_icon {
+  display: none;
+}
+.nav_menu_sidebar {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 100%;
+  padding: 1rem;
+  width: 200px;
+  border-radius: 1px solid;
+  -webkit-border-radius: 1px solid;
+  -moz-border-radius: 1px solid;
+  -ms-border-radius: 1px solid;
+  -o-border-radius: 1px solid;
+  transform: translate(1000px);
+  -webkit-transform: translate(1000px);
+  -moz-transform: translate(1000px);
+  -ms-transform: translate(1000px);
+  -o-transform: translate(1000px);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+#input_menu:checked ~ ul {
+  top: 5rem;
+  transform: translateX(700px);
+  -webkit-transform: translateX(700px);
+  -moz-transform: translateX(700px);
+  -ms-transform: translateX(700px);
+  -o-transform: translateX(700px);
+}
+#input_menu:checked + label svg:first-child {
+  display: none;
+}
+#input_menu:checked + label svg:last-child {
+  display: block;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+.link_navigation a {
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid $red;
+  padding: 8px 16px;
+  border-radius: 100px;
+  @media (max-width: tablet) {
+  }
+}
+.link_navigation a:first-child {
+  color: $red;
+  font-weight: 400;
+}
+.link_navigation a:last-child {
+  background-color: $red;
+  color: #fff;
+  font-weight: 500;
+}
