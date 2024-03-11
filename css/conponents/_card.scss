@@ -1,0 +1,130 @@
+.food__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 0;
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.food__section {
+  &--seeAll {
+    text-align: center;
+    margin-top: 1rem;
+    & a {
+      display: inline-block;
+      text-decoration: underline;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #504f4f;
+      transition: all 0.4s ease-in;
+      -webkit-transition: all 0.4s ease-in;
+      -moz-transition: all 0.4s ease-in;
+      -ms-transition: all 0.4s ease-in;
+      -o-transition: all 0.4s ease-in;
+      &:hover {
+        color: #3a3636;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+      }
+    }
+  }
+}
+.food__card {
+  width: 370px;
+  border: 1px solid #e3e3e3;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-items: left;
+  position: relative;
+  &--badge {
+    position: absolute;
+    left: 10px;
+  }
+  &--img {
+    margin-bottom: 1.5rem;
+
+    z-index: 20;
+
+    &--bg {
+      position: absolute;
+      top: 99px;
+      width: 338px;
+      height: 105px;
+      border-radius: 8px;
+      background-color: #fffde6;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      z-index: 10;
+    }
+  }
+  &--content {
+    margin-right: 2rem;
+  }
+
+  &--desc {
+    &--title {
+      color: #323232;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+    & p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      color: #504f4f;
+    }
+  }
+  &--stars {
+    margin-top: 0.5rem;
+    width: 250px;
+    display: flex;
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      color: #7d7d7d;
+    }
+  }
+  &--price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    & span {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      color: #323232;
+    }
+    button {
+      border: none;
+      background-color: transparent;
+      margin-right: -4rem;
+      svg {
+        width: 44px;
+        height: auto;
+        padding: 4.5px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+      }
+    }
+  }
+}
